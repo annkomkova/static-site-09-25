@@ -4,9 +4,9 @@
   "author": "Anna Komkova",
   "license": "MIT",
   "scripts": {
-    "start": "webpack serve --open --config webpack.dev.js",
-    "watch": "webpack --config webpack.dev.js",
-    "build": "webpack --config webpack.prod.js"
+    "start": "webpack serve --open --config config/webpack.dev.js",
+    "watch": "webpack --config config/webpack.dev.js",
+    "build": "webpack --config config/webpack.prod.js"
   },
   "devDependencies": {
     "@babel/core": "^7.28.0",
