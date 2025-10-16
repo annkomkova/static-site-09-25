@@ -1,0 +1,45 @@
+@media screen and (max-width: 1280px) {
+  #indexWrapper {
+    justify-content: flex-end;
+    gap: 100rem;
+  }
+}
+@media screen and (max-width: 780px) {
+  html {
+    font-size: calc(1vw / 6);
+  }
+  #index {
+    overflow: auto;
+  }
+  #indexWrapper {
+    width: calc(100% - 40rem);
+    margin: 20rem;
+    height: fit-content;
+    gap: 0;
+  }
+  .indexContainer {
+    flex-direction: column;
+  }
+  .indexContainer > div {
+    width: 100%;
+  }
+  #index h1 {
+    font-size: 100rem;
+    margin-top: 40rem;
+  }
+  #index form input,
+  #index form button {
+    width: 100%;
+    margin: 10rem 0 0 0;
+  }
+  .animCircle {
+    width: 240rem;
+    height: 240rem;
+  }
+  .indexAnimation {
+    width: 100%;
+    height: auto;
+    top: 50%;
+    left: 0;
+  }
+}
