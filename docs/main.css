@@ -153,20 +153,201 @@ table {
   font-weight: 300;
 }
 
+* {
+  box-sizing: border-box;
+}
+html {
+  font-size: calc(1vw / 14.4);
+}
 body {
   font-family: 'PT Root UI', Arial, Helvetica, sans-serif;
 }
-h1 {
-  font-weight: 700;
-}
-h2 {
-  font-weight: 500;
-}
+
 h3 {
   font-weight: 400;
 }
 h4 {
   font-weight: 300;
+}
+/* стилия для заглушки */
+#index {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  position: relative;
+}
+#indexWrapper {
+  overflow: hidden;
+  margin-top: 20rem;
+  width: 1400rem;
+  height: 96vh;
+  border-radius: 40rem;
+  background-color: #090227cc;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  backdrop-filter: blur(30rem);
+}
+#index h1 {
+  font-weight: 700;
+  font-size: 250rem;
+  color: #eee;
+  display: block;
+  margin: 0 auto;
+}
+#index h2 {
+  font-weight: 500;
+  font-size: 58rem;
+  line-height: 64rem;
+  color: #eee;
+  margin-bottom: 40rem;
+}
+#index p,
+#index label {
+  font-weight: 400;
+  font-size: 28rem;
+  line-height: 36rem;
+  color: #eee;
+  margin: 20rem 0;
+}
+.indexContainer {
+  display: flex;
+}
+.indexContainerInfo {
+  padding: 60rem 20rem;
+  width: 60%;
+}
+.indexContainerImage {
+  width: 40%;
+  padding-top: 20rem;
+}
+.indexContainerImage img {
+  width: 56%;
+  display: block;
+  margin: 0 auto;
+  transition: transform ease 1s;
+}
+.indexContainerImage img:hover {
+  transform: translateX(-60rem) translateY(40rem);
+  transition: transform ease 1s;
+}
+p#my-form-status {
+  font-size: 16rem;
+  line-height: 100%;
+  margin: 10rem 0 0 20rem;
+}
+#index form input {
+  height: 46rem;
+  width: 400rem;
+  border-radius: 30rem;
+  border: 2rem solid transparent;
+  outline: none;
+  padding: 0 20rem;
+  font-size: 20rem;
+  transition: border ease 0.4s;
+}
+#index form input:focus {
+  border: 2rem solid #9a91bc;
+  transition: border ease 0.8s;
+}
+#index form button {
+  height: 46rem;
+  padding: 0 30rem;
+  text-transform: uppercase;
+  font-size: 20rem;
+  border-radius: 30rem;
+  border: 2rem solid #9a91bc;
+  background-color: #9a91bc;
+  color: #fff;
+  font-weight: 500;
+  cursor: pointer;
+  margin-left: 20rem;
+  transition: all ease 0.4s;
+}
+#index form button:hover {
+  background-color: #8075aa;
+  border: 2rem solid #8075aa;
+  transition: all ease 0.8s;
+}
+.indexAnimation {
+  position: absolute;
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  top: 2%;
+  left: 25%;
+  animation: rotate 10s linear infinite;
+}
+.animCircle {
+  width: 50%;
+  height: 50%;
+  background-color: #b300ff;
+  border-radius: 100%;
+  z-index: -1;
+}
+.animCircle:nth-of-type(1),
+.animCircle:nth-of-type(4) {
+  background-color: #58b1ff;
+}
+
+@media screen and (max-width: 1280px) {
+  #indexWrapper {
+    justify-content: flex-end;
+    gap: 100rem;
+  }
+}
+@media screen and (max-width: 780px) {
+  html {
+    font-size: calc(1vw / 6);
+  }
+  #index {
+    overflow: auto;
+  }
+  #indexWrapper {
+    width: calc(100% - 40rem);
+    margin: 20rem;
+    height: fit-content;
+    gap: 0;
+  }
+  .indexContainer {
+    flex-direction: column;
+  }
+  .indexContainer > div {
+    width: 100%;
+  }
+  #index h1 {
+    font-size: 100rem;
+    margin-top: 40rem;
+  }
+  #index form input,
+  #index form button {
+    width: 100%;
+    margin: 10rem 0 0 0;
+  }
+  .animCircle {
+    width: 240rem;
+    height: 240rem;
+  }
+  .indexAnimation {
+    width: 100%;
+    height: auto;
+    top: 50%;
+    left: 0;
+  }
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0) scale(0.8);
+  }
+  50% {
+    transform: rotate(180deg) scale(0.5);
+  }
+  100% {
+    transform: rotate(360deg) scale(0.8);
+  }
 }
 
 
