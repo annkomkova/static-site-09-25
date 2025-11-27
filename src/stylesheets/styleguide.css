@@ -11,77 +11,76 @@ html {
 body {
   font-family: 'PT Root UI', Arial, Helvetica, sans-serif;
 }
-header nav {
-  padding: 30rem 40rem;
+.W_HeaderLinks {
+  padding: 10rem 40rem;
 }
-header nav a {
+.A_HeaderLink {
   text-decoration: none;
   color: #aaa;
   transition: all ease 0.4s;
 }
-header nav a:hover {
+.A_HeaderLink:hover {
   color: #fff;
   transition: all ease 0.6s;
 }
-header {
+.O_Header {
   background-color: #090227cc;
   border-radius: 0 0 40rem 40rem;
 }
-.header {
+.M_Header {
   display: flex;
   justify-content: space-between;
-  padding: 40rem;
+  padding: 0 40rem 40rem;
   align-items: center;
 }
-header img {
+.A_HeaderImage {
   width: 200rem;
 }
-h1 {
+.A_MainHeader {
   font-weight: 700;
   font-size: 120rem;
   color: #eee;
   display: block;
 }
-h2 {
+.A_SectionHeader {
   font-weight: 500;
   font-size: 58rem;
   line-height: 64rem;
   color: #090227;
   margin-bottom: 30rem;
 }
-h3 {
+.A_SectionDopHeader {
   font-weight: 500;
   font-size: 38rem;
   line-height: 54rem;
   color: #090227;
   margin-bottom: 20rem;
 }
-p,
-a {
+.A_MainSectionText,
+.A_HeaderLink {
   font-weight: 400;
   font-size: 28rem;
   line-height: 36rem;
   color: #090227;
 }
-p {
+.A_MainSectionText {
   margin-bottom: 20rem;
 }
-main {
+.S_Main {
   display: flex;
   padding: 60rem 0;
 }
-.mainSection {
-  position: relative;
-}
-.mainSection:nth-of-type(1),
-.mainSection:nth-of-type(3) {
+.O_Sidebar,
+.O_Aside {
   padding: 0 20rem;
   width: 20%;
+  position: relative;
 }
-.mainSection:nth-of-type(2) {
+.O_MainSection {
   width: 60%;
+  position: relative;
 }
-.mainSectionSidebar {
+.C_MainSectionLinks {
   width: 16vw;
   position: fixed;
   display: flex;
@@ -91,7 +90,7 @@ main {
   border-radius: 30rem;
   padding: 10rem;
 }
-.mainSectionSidebar a {
+.A_MainSectionLink {
   width: 100%;
   border-radius: 22rem;
   background: #eee;
@@ -99,53 +98,51 @@ main {
   padding: 10rem 20rem;
   text-decoration: none;
   transition: all ease 0.4s;
+  font-size: 28rem;
 }
-.mainSectionSidebar a:hover {
+.A_MainSectionLink:hover {
   background: #090227;
   background: radial-gradient(circle, rgb(69, 46, 128) 0%, rgb(9, 2, 39) 100%);
   color: #eee;
   transition: all ease 0.8s;
 }
-.mainSectionSidebar a:active {
+.C_MainSectionLinks a:active {
   background-color: cornflowerblue;
 }
-p + h2,
-h2 + h2,
-div + h2,
-img + h2 {
+.W_MainSection {
   margin-top: 80rem;
 }
-.mainSectionBlock_row {
+.W_MainSectionBlock_row {
   display: flex;
   gap: 20rem;
 }
-.mainSectionBlock_column {
+.W_MainSectionBlock_column {
   padding: 40rem 0 0 180rem;
   display: flex;
   flex-direction: column;
   gap: 20rem;
 }
 @media screen and (max-width: 1023px) {
-  .mainSection:nth-of-type(3) {
+  .O_Aside {
     display: none;
   }
-  .mainSection:nth-of-type(2) {
+  .O_MainSection {
     width: 80%;
     padding: 0 20rem;
   }
 }
 @media screen and (max-width: 600px) {
-  main {
+  .S_Main {
     flex-direction: column;
   }
-  .mainSection:nth-of-type(2),
-  .mainSection:nth-of-type(1) {
+  .O_MainSection,
+  .O_Sidebar {
     width: 100%;
   }
-  .mainSection:nth-of-type(2) {
+  .O_MainSection {
     padding-bottom: 90rem;
   }
-  .mainSectionSidebar {
+  .C_MainSectionLinks {
     z-index: 2;
     flex-direction: row;
     width: 90%;
@@ -153,34 +150,34 @@ img + h2 {
     /* background-color: #09022775;
     backdrop-filter: blur(4rem); */
   }
-  /* .mainSectionSidebar a {
+  /* .C_MainSectionLinks a {
     background-color: #eeeeee75;
     backdrop-filter: blur(4rem);
   } */
 
-  h1 {
+  .A_MainHeader {
     font-size: 190rem;
   }
-  h2 {
+  .A_SectionHeader {
     font-size: 92rem;
     line-height: 1.5rem;
     margin-bottom: 70rem;
   }
-  h3 {
+  .A_SectionDopHeader {
     font-size: 70rem;
     line-height: 54rem;
     margin: 50rem 0;
   }
-  p,
-  a {
+  .A_MainSectionText,
+  .A_HeaderLink {
     font-size: 60rem;
     line-height: 1.5;
   }
-  .mainSectionBlock_column {
+  .W_MainSectionBlock_column {
     padding: 40rem 0 0 40rem;
     gap: 40rem;
   }
-  .mainSectionBlock_row {
+  .W_MainSectionBlock_row {
     flex-direction: column;
   }
 }

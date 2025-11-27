@@ -3,99 +3,156 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Primary Meta Tags -->
     <title>Стайлгайд</title>
+    <meta name="title" content="Стайлгайд" />
+    <meta
+      name="description"
+      content="Стайлгайд учебного проекта. Рассказывает о логотипе, основных и дополнительных цветах, типографике, бренде и графике."
+    />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:url"
+      content="https://annkomkova.github.io/static-site-09-25/styleguide.html"
+    />
+    <meta property="og:title" content="Стайлгайд" />
+    <meta
+      property="og:description"
+      content="Стайлгайд учебного проекта. Рассказывает о логотипе, основных и дополнительных цветах, типографике, бренде и графике."
+    />
+    <meta
+      property="og:image"
+      content="https://raw.githubusercontent.com/annkomkova/static-site-09-25/refs/heads/main/src/images/meta/og-styleguide.png"
+    />
+
+    <!-- X (Twitter) -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta
+      property="twitter:url"
+      content="https://annkomkova.github.io/static-site-09-25/styleguide.html"
+    />
+    <meta property="twitter:title" content="Стайлгайд" />
+    <meta
+      property="twitter:description"
+      content="Стайлгайд учебного проекта. Рассказывает о логотипе, основных и дополнительных цветах, типографике, бренде и графике."
+    />
+    <meta
+      property="twitter:image"
+      content="https://raw.githubusercontent.com/annkomkova/static-site-09-25/refs/heads/main/src/images/meta/og-styleguide.png"
+    />
+
+    <!-- Meta Tags Generated with https://metatags.io -->
   </head>
   <body>
-    <header>
-      <nav>
-        <a href="index.html">На главную</a>
+    <header class="O_Header">
+      <nav class="W_HeaderLinks">
+        <a href="index.html" class="A_HeaderLink">На главную</a>
       </nav>
 
-      <section class="header">
-        <h1>Бренд и&nbsp;стайлгайд</h1>
-        <img src="images/glassFlower.svg" alt="" />
+      <section class="M_Header">
+        <h1 class="A_MainHeader">Бренд и&nbsp;стайлгайд</h1>
+        <img src="images/glassFlower.svg" alt="" class="A_HeaderImage" />
       </section>
     </header>
-    <main>
-      <section class="mainSection">
-        <nav class="mainSectionSidebar">
-          <a href="#brand">Бренд</a>
-          <a href="#logo">Лого</a>
-          <a href="#colors">Цвета</a>
-          <a href="#grid">Сетка</a>
-          <a href="#fonts">Типографика</a>
+
+    <main class="S_Main">
+      <section class="O_Sidebar">
+        <nav class="C_MainSectionLinks">
+          <a class="A_MainSectionLink" href="#brand">Бренд</a>
+          <a class="A_MainSectionLink" href="#logo">Лого</a>
+          <a class="A_MainSectionLink" href="#colors">Цвета</a>
+          <a class="A_MainSectionLink" href="#grid">Сетка</a>
+          <a class="A_MainSectionLink" href="#fonts">Типографика</a>
         </nav>
       </section>
-      <section class="mainSection">
-        <h2 id="brand">О проекте</h2>
-        <p class="lid">
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde itaque
-          officia in sint qui praesentium porro. Adipisci tenetur dolore quia
-          expedita vel atque itaque, quidem, sapiente culpa velit est
-          dignissimos?
-        </p>
 
-        <h2 id="logo">Лого</h2>
-        <div class="mainSectionBlock_row">
-          <p>
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fuga
-            tempora repellendus in
+      <section class="O_MainSection">
+        <article class="W_MainSection">
+          <h2 class="A_SectionHeader" id="brand">О проекте</h2>
+          <p class="A_MainSectionText" class="lid">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde
+            itaque officia in sint qui praesentium porro. Adipisci tenetur
+            dolore quia expedita vel atque itaque, quidem, sapiente culpa velit
+            est dignissimos?
           </p>
-          <p>
-            neque repellat aperiam voluptas, pariatur porro dolor minima quidem
-            ad dignissimos enim odit architecto omnis hic alias nemo.
-          </p>
-        </div>
+        </article>
 
-        <h2 id="colors">Цвета</h2>
-        <h3>Основные цвета</h3>
-        <div class="mainSectionBlock_row">
-          <p>
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fuga
-            tempora repellendus in
-          </p>
-          <p>
-            neque repellat aperiam voluptas, pariatur porro dolor minima quidem
-            ad dignissimos enim odit architecto omnis hic alias nemo.
-          </p>
-        </div>
-        <h3>Дополнительные цвета</h3>
-        <p>
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tenetur
-          excepturi veniam amet reprehenderit nam temporibus suscipit dolore
-          nisi laborum eius! Nisi, voluptatibus deserunt dolores incidunt est
-          nostrum cupiditate hic neque.
-        </p>
+        <article class="W_MainSection">
+          <h2 class="A_SectionHeader" id="logo">Лого</h2>
+          <div class="W_MainSectionBlock_row">
+            <p class="A_MainSectionText">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fuga
+              tempora repellendus in
+            </p>
+            <p class="A_MainSectionText">
+              neque repellat aperiam voluptas, pariatur porro dolor minima
+              quidem ad dignissimos enim odit architecto omnis hic alias nemo.
+            </p>
+          </div>
+        </article>
 
-        <h2 id="grid">Сетка</h2>
-        <div class="mainSectionBlock_row">
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            Perspiciatis voluptatibus repellat earum rem aperiam temporibus
-            necessitatibus assumenda deleniti! Id assumenda dignissimos iusto
-            asperiores similique quasi, odit repellendus quidem sunt dicta.
-            Maxime pariatur aliquam minima veritatis quasi ipsam eius libero vel
-            ipsa possimus suscipit qui tempora, accusamus cupiditate eaque
-            dolore deleniti esse, porro excepturi, iure corrupti? Tenetur
-            blanditiis maxime itaque quam.
-          </p>
-        </div>
+        <article class="W_MainSection">
+          <h2 class="A_SectionHeader" id="colors">Цвета</h2>
 
-        <h2 id="fonts">Типографика</h2>
-        <p>
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Incidunt
-          consectetur ipsam magni libero deserunt repellendus? Consectetur animi
-          aperiam quaerat debitis cum sapiente a adipisci, veritatis, culpa,
-          nihil tenetur quasi quas?
-        </p>
-        <div class="mainSectionBlock_column">
-          <h1>Заголовок страницы</h1>
-          <h2 id="">Подзаголовок</h2>
-          <h3>Подзаголовок второго уровня</h3>
-          <p>Основной текст</p>
-        </div>
+          <h3 class="A_SectionDopHeader">Основные цвета</h3>
+          <div class="W_MainSectionBlock_row">
+            <p class="A_MainSectionText">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fuga
+              tempora repellendus in
+            </p>
+            <p class="A_MainSectionText">
+              neque repellat aperiam voluptas, pariatur porro dolor minima
+              quidem ad dignissimos enim odit architecto omnis hic alias nemo.
+            </p>
+          </div>
+
+          <h3 class="A_SectionDopHeader">Дополнительные цвета</h3>
+          <p class="A_MainSectionText">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tenetur
+            excepturi veniam amet reprehenderit nam temporibus suscipit dolore
+            nisi laborum eius! Nisi, voluptatibus deserunt dolores incidunt est
+            nostrum cupiditate hic neque.
+          </p>
+        </article>
+
+        <article class="W_MainSection">
+          <h2 class="A_SectionHeader" id="grid">Сетка</h2>
+
+          <div class="W_MainSectionBlock_row">
+            <p class="A_MainSectionText">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Perspiciatis voluptatibus repellat earum rem aperiam temporibus
+              necessitatibus assumenda deleniti! Id assumenda dignissimos iusto
+              asperiores similique quasi, odit repellendus quidem sunt dicta.
+              Maxime pariatur aliquam minima veritatis quasi ipsam eius libero
+              vel ipsa possimus suscipit qui tempora, accusamus cupiditate eaque
+              dolore deleniti esse, porro excepturi, iure corrupti? Tenetur
+              blanditiis maxime itaque quam.
+            </p>
+          </div>
+        </article>
+
+        <article class="W_MainSection">
+          <h2 class="A_SectionHeader" id="fonts">Типографика</h2>
+          <p class="A_MainSectionText">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Incidunt
+            consectetur ipsam magni libero deserunt repellendus? Consectetur
+            animi aperiam quaerat debitis cum sapiente a adipisci, veritatis,
+            culpa, nihil tenetur quasi quas?
+          </p>
+
+          <div class="W_MainSectionBlock_column">
+            <h1 class="A_MainHeader">Заголовок страницы</h1>
+            <h2 class="A_SectionHeader" id="">Подзаголовок</h2>
+            <h3 class="A_SectionDopHeader">Подзаголовок второго уровня</h3>
+            <p class="A_MainSectionText">Основной текст</p>
+          </div>
+        </article>
       </section>
-      <section class="mainSection"></section>
+
+      <section class="O_Aside"></section>
     </main>
   </body>
 </html>
