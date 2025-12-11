@@ -10,6 +10,7 @@ html {
 }
 body {
   font-family: 'PT Root UI', Arial, Helvetica, sans-serif;
+  background-color: #eee;
 }
 .W_HeaderLinks {
   padding: 10rem 40rem;
@@ -24,8 +25,9 @@ body {
   transition: all ease 0.6s;
 }
 .O_Header {
-  background-color: #090227cc;
+  background-color: #010101;
   border-radius: 0 0 40rem 40rem;
+  overflow: hidden;
 }
 .M_Header {
   display: flex;
@@ -33,13 +35,29 @@ body {
   padding: 0 40rem 40rem;
   align-items: center;
 }
-.A_HeaderImage {
+/* .A_HeaderImage {
   width: 200rem;
+} */
+.A_HeaderImage {
+  width: 400rem;
+  height: 300rem;
+  background-image: url('../images/crystal.jpg');
+  background-size: 400rem 3600rem;
+  background-position-y: 300rem;
+  transform-origin: center;
+  transform: scale(1);
+  animation: spriteCrystalAnim 1.5s steps(1) infinite alternate paused;
+  transition: transform 0.1s linear;
+}
+.A_HeaderImage:hover {
+  animation-play-state: running;
+  transform: scale(1.15);
+  transition: transform 0.5s linear;
 }
 .A_MainHeader {
   font-weight: 700;
   font-size: 120rem;
-  color: #eee;
+  color: #d8d8d8;
   display: block;
 }
 .A_SectionHeader {
@@ -122,6 +140,46 @@ body {
   flex-direction: column;
   gap: 20rem;
 }
+
+@keyframes spriteCrystalAnim {
+  0% {
+    background-position-y: 0;
+  }
+  8% {
+    background-position-y: -300rem;
+  }
+  16% {
+    background-position-y: -600rem;
+  }
+  24% {
+    background-position-y: -900rem;
+  }
+  32% {
+    background-position-y: -1200rem;
+  }
+  40% {
+    background-position-y: -1500rem;
+  }
+  48% {
+    background-position-y: -1800rem;
+  }
+  56% {
+    background-position-y: -2100rem;
+  }
+  64% {
+    background-position-y: -2400rem;
+  }
+  72% {
+    background-position-y: -2700rem;
+  }
+  80% {
+    background-position-y: -3000rem;
+  }
+  88% {
+    background-position-y: -3300rem;
+  }
+}
+
 @media screen and (max-width: 1023px) {
   .O_Aside {
     display: none;
