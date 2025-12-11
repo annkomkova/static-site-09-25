@@ -154,7 +154,7 @@ p#my-form-status {
   fill: #ff0302;
   transition: fill ease 0.8s;
 }
-nav {
+.C_Icons {
   display: flex;
   justify-content: flex-end;
   padding: 10rem;
@@ -165,4 +165,25 @@ p {
 }
 .text {
   color: blue;
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  padding: 10rem 20rem;
+  align-items: center;
+}
+.C_MainLinks {
+  display: flex;
+  padding: 10rem;
+  gap: 20rem;
+}
+.C_MainLinks a {
+  font-size: 20rem;
+  color: #efefef;
+  text-decoration: none;
+  transition: text-decoration 0.4s ease;
+}
+.C_MainLinks a:hover {
+  text-decoration: underline;
+  transition: text-decoration 0.8s ease;
 }
