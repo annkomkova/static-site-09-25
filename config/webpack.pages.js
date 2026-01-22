@@ -25,7 +25,8 @@ const htmlPages = [
     './pages/articles/article1.html',
     ['index']
   ),
-  createPage('./src/styleguide.html', './styleguide.html', ['styleguide'])
+  createPage('./src/styleguide.html', './styleguide.html', ['styleguide']),
+  createPage('./src/pages/theory.html', './pages/theory.html', ['theory'])
 ]
 
 module.exports = htmlPages
