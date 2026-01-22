@@ -17,16 +17,16 @@ const htmlPages = [
     'index'
   ]),
   createPage('./src/pages/tests.html', './pages/tests.html', ['index']),
-  createPage('./src/pages/tests/test1.html', './pages/tests/test1.html', [
-    'index'
-  ]),
   createPage(
     './src/pages/articles/article1.html',
     './pages/articles/article1.html',
     ['index']
   ),
   createPage('./src/styleguide.html', './styleguide.html', ['styleguide']),
-  createPage('./src/pages/theory.html', './pages/theory.html', ['theory'])
+  createPage('./src/pages/theory.html', './pages/theory.html', ['theory']),
+  createPage('./src/pages/tests/test1.html', './pages/tests/test1.html', [
+    'test1'
+  ])
 ]
 
 module.exports = htmlPages

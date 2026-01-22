@@ -7,7 +7,8 @@ module.exports = {
     index: './src/javascripts/index.js',
     styleguide: './src/javascripts/styleguide.js',
     articles: './src/javascripts/articles.js',
-    theory: './src/javascripts/theory.js'
+    theory: './src/javascripts/theory.js',
+    test1: './src/pages/tests/test1.js'
   },
   output: {
     path: path.resolve('.', 'docs'),
