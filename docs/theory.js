@@ -1,0 +1,1 @@
+console.clear(),function(){for(var o,e,r,n=0;n<10;n++){o=2*n+1,r=10-n,e="";for(var c=0;c<r;c++)e+=" ";for(var l=0;l<o;l++)e+="*";console.log(e)}}(),document.querySelector(".showModalWindow").addEventListener("click",function(){alert("Повторяем основы JS")});
