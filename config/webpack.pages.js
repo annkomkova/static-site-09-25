@@ -9,23 +9,35 @@ function createPage(template, filename, chunks) {
 }
 
 const htmlPages = [
-  createPage('./src/index.html', './index.html', ['index']),
+  createPage('./src/index.html', './index.html', ['index', 'basic']),
   createPage('./src/pages/articles.html', './pages/articles.html', [
-    'articles'
+    'articles',
+    'basic'
   ]),
   createPage('./src/pages/dictionary.html', './pages/dictionary.html', [
-    'index'
+    'index',
+    'basic'
   ]),
-  createPage('./src/pages/tests.html', './pages/tests.html', ['index']),
+  createPage('./src/pages/tests.html', './pages/tests.html', [
+    'index',
+    'basic'
+  ]),
   createPage(
     './src/pages/articles/article1.html',
     './pages/articles/article1.html',
-    ['index']
+    ['index', 'basic']
   ),
-  createPage('./src/styleguide.html', './styleguide.html', ['styleguide']),
-  createPage('./src/pages/theory.html', './pages/theory.html', ['theory']),
+  createPage('./src/styleguide.html', './styleguide.html', [
+    'styleguide',
+    'basic'
+  ]),
+  createPage('./src/pages/theory.html', './pages/theory.html', [
+    'theory',
+    'basic'
+  ]),
   createPage('./src/pages/tests/test1.html', './pages/tests/test1.html', [
-    'test1'
+    'test1',
+    'basic'
   ])
 ]
 

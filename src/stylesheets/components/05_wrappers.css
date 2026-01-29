@@ -1,0 +1,82 @@
+/* articles.html */
+.W_ArticlesCard {
+  width: calc(25% - 15rem);
+  display: flex;
+  flex-direction: column;
+  gap: 14rem;
+  background-color: #847d92;
+  border-radius: 20rem;
+  padding-bottom: 20rem;
+  color: #eee;
+}
+.W_ArticlesCardImageWrapper {
+  background-color: #4c445c;
+  border-radius: 20rem;
+  padding: 20rem 20rem 0;
+  min-height: 212rem;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+.W_ArticlesCardContent {
+  padding: 0 20rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  gap: 20rem;
+}
+.W_ArticleSlide {
+  display: flex;
+  border-radius: 20rem;
+  height: 100%;
+  background-color: #847d92;
+  color: #eee;
+}
+.W_SlideImageWrapper {
+  background-color: #4c445c;
+  border-radius: 20rem;
+  padding: 20rem 60rem 0;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+.O_Swiper .W_ArticlesCardContent {
+  padding: 40rem;
+}
+
+/* ______________styleguide___________ */
+.W_HeaderLinks {
+  padding: 10rem 40rem;
+}
+.W_MainSection {
+  margin-top: 80rem;
+}
+.W_MainSectionBlock_row {
+  display: flex;
+  gap: 20rem;
+}
+.W_MainSectionBlock_column {
+  padding: 40rem 0 0 180rem;
+  display: flex;
+  flex-direction: column;
+  gap: 20rem;
+}
+
+/* ________________test___________ */
+.W_TestTextSection {
+  color: var(--text-main-color);
+  font-size: 24rem;
+}
+.W_ResultTest {
+  color: var(--text-main-color);
+  font-size: 24rem;
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 30rem;
+}

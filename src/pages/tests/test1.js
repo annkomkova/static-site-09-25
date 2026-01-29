@@ -1,5 +1,9 @@
 import { initTest, chooseAnswer } from '../../javascripts/tests.js'
 
+import imgGood from '../../images/results/result_good.svg'
+import imgOk from '../../images/results/result_ok.svg'
+import imgBad from '../../images/results/result_bad.svg'
+
 const stages = [
   {
     question:
@@ -77,15 +81,18 @@ const stages = [
 const resultTable = [
   {
     header: 'Ого, кажется, вы отлично знакомы с лекарственными растениями!',
-    paragraph: 'Попробуйте другие наши тесты, чтобы проверить себя!'
+    paragraph: 'Попробуйте другие наши тесты, чтобы проверить себя!',
+    image: `${imgGood}`
   },
   {
     header: 'Отличный результат! Но нюансы лучше повторить',
-    paragraph: 'Попробуйте другие наши тесты, чтобы проверить себя!'
+    paragraph: 'Попробуйте другие наши тесты, чтобы проверить себя!',
+    image: `${imgOk}`
   },
   {
     header: 'Кажется, вы почти не знакомы с этой темой',
-    paragraph: 'Попробуйте ещё раз позднее'
+    paragraph: 'Попробуйте ещё раз позднее',
+    image: `${imgBad}`
   }
 ]
 

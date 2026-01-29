@@ -1,0 +1,28 @@
+/* articles.html */
+.C_ArticlesCardTags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10rem;
+}
+
+/* ______________styleguide___________ */
+.C_MainSectionLinks {
+  width: 16vw;
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  gap: 10rem;
+  background-color: #090227cc;
+  border-radius: 30rem;
+  padding: 10rem;
+}
+.C_MainSectionLinks a:active {
+  background-color: cornflowerblue;
+}
+
+/* ________________test___________ */
+.C_TestAnswerMessages {
+  display: flex;
+  flex-direction: column;
+  gap: 30rem;
+}

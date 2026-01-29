@@ -1,0 +1,18 @@
+/* ______________styleguide___________ */
+.M_Header {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 40rem 40rem;
+  align-items: center;
+}
+
+/* ________________test___________ */
+.M_TestImageSection {
+  width: 30%;
+}
+.M_TestAnswerMessage {
+  display: flex;
+  align-items: center;
+  gap: 16rem;
+  position: relative;
+}
