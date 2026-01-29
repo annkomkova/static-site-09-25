@@ -1,0 +1,16 @@
+/* articles.html, styleguide */
+
+.S_Articles,
+.S_Styleguide {
+  background-color: #eee;
+}
+.S_Main {
+  display: flex;
+  padding: 60rem 0;
+}
+
+/* ________________test___________ */
+.S_Test {
+  padding: 20rem 80rem;
+  width: 100%;
+}

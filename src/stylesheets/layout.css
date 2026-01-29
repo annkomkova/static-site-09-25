@@ -1,19 +1,3 @@
-* {
-  box-sizing: border-box;
-}
-html {
-  font-size: calc(1vw / 14.4);
-}
-body {
-  font-family: 'PT Root UI', Arial, Helvetica, sans-serif;
-}
-
-h3 {
-  font-weight: 400;
-}
-h4 {
-  font-weight: 300;
-}
 /* стилия для заглушки */
 #index {
   display: flex;
@@ -28,7 +12,7 @@ h4 {
   width: 1400rem;
   height: 96vh;
   border-radius: 40rem;
-  background-color: #090227cc;
+  background-color: var(--bg-card-color);
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -37,7 +21,7 @@ h4 {
 #index h1 {
   font-weight: 700;
   font-size: 250rem;
-  color: #eee;
+  color: var(--text-main-color);
   display: block;
   margin: 0 auto;
 }
@@ -45,7 +29,7 @@ h4 {
   font-weight: 500;
   font-size: 58rem;
   line-height: 64rem;
-  color: #eee;
+  color: var(--text-main-color);
   margin-bottom: 40rem;
 }
 #index p,
@@ -53,7 +37,7 @@ h4 {
   font-weight: 400;
   font-size: 28rem;
   line-height: 36rem;
-  color: #eee;
+  color: var(--text-main-color);
   margin: 20rem 0;
 }
 .indexContainer {
@@ -93,7 +77,7 @@ p#my-form-status {
   transition: border ease 0.4s;
 }
 #index form input:focus {
-  border: 2rem solid #9a91bc;
+  border: 2rem solid var(--button-basic-color);
   transition: border ease 0.8s;
 }
 #index form button {
@@ -102,8 +86,8 @@ p#my-form-status {
   text-transform: uppercase;
   font-size: 20rem;
   border-radius: 30rem;
-  border: 2rem solid #9a91bc;
-  background-color: #9a91bc;
+  border: 2rem solid var(--button-basic-color);
+  background-color: var(--button-basic-color);
   color: #fff;
   font-weight: 500;
   cursor: pointer;
@@ -111,8 +95,8 @@ p#my-form-status {
   transition: all ease 0.4s;
 }
 #index form button:hover {
-  background-color: #8075aa;
-  border: 2rem solid #8075aa;
+  background-color: var(--button-hover-color);
+  border: 2rem solid var(--button-hover-color);
   transition: all ease 0.8s;
 }
 .indexAnimation {

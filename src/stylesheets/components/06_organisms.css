@@ -1,0 +1,55 @@
+/* ____________________articles.html____________________ */
+.O_HeaderArticles {
+  width: 100%;
+  background-color: #4c445c;
+  color: #eee;
+  padding: 30rem 40rem;
+  border-radius: 0 0 40rem 40rem;
+}
+.O_HeaderArticlesLinks,
+.O_Articles {
+  display: flex;
+  gap: 20rem;
+}
+.O_Articles {
+  padding: 30rem 40rem;
+  width: 80%;
+  margin: 0 auto;
+  flex-wrap: wrap;
+}
+.O_Swiper {
+  padding: 30rem 40rem;
+  width: 80%;
+  height: 600rem;
+  font-size: 20rem;
+  margin: 0 auto;
+}
+
+/* ______________styleguide___________ */
+.O_Header {
+  background-color: #010101;
+  border-radius: 0 0 40rem 40rem;
+  overflow: hidden;
+}
+.O_Sidebar,
+.O_Aside {
+  padding: 0 20rem;
+  width: 20%;
+  position: relative;
+}
+.O_MainSection {
+  width: 60%;
+  position: relative;
+}
+
+/* ________________test___________ */
+.O_Test {
+  width: 1280rem;
+  height: 600rem;
+  background-color: var(--bg-card-color);
+  border-radius: 40rem;
+  display: flex;
+  gap: 40rem;
+  padding: 20rem;
+  padding-bottom: 0;
+}

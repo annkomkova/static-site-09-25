@@ -1,0 +1,41 @@
+@import 'reset.css';
+@import 'fonts.css';
+
+* {
+  box-sizing: border-box;
+}
+html {
+  font-size: calc(1vw / 14.4);
+  scroll-behavior: smooth;
+}
+body {
+  font-family: 'PT Root UI', Arial, Helvetica, sans-serif;
+  font-size: 16rem;
+}
+h3 {
+  font-weight: 400;
+}
+h4 {
+  font-weight: 300;
+}
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+.swiper-pagination-bullet-active {
+  background: #4c445c;
+}
+:root {
+  --bg-card-color: #090227cc;
+  --text-main-color: #eee;
+  --button-basic-color: #9a91bc;
+  --button-hover-color: #8075aa;
+}
+
+@import 'components/01_quarks.css';
+@import 'components/02_atoms.css';
+@import 'components/03_molecules.css';
+@import 'components/04_collections.css';
+@import 'components/05_wrappers.css';
+@import 'components/06_organisms.css';
+@import 'components/07_superorganisms.css';
