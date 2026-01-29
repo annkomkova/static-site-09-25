@@ -1,0 +1,546 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+@font-face {
+  font-family: 'PT Root UI';
+  src: url(fonts/f82344daaacb5424b169.woff),
+    url(fonts/f31c5219b0912845f393.woff2);
+  font-weight: 700;
+}
+@font-face {
+  font-family: 'PT Root UI';
+  src: url(fonts/e24244df074291681cd3.woff),
+    url(fonts/6f2ccf4ac327e1d6507e.woff2);
+  font-weight: 500;
+}
+@font-face {
+  font-family: 'PT Root UI';
+  src: url(fonts/ea7178e3e5d27a1d3248.woff),
+    url(fonts/b43dba986b9cde356afd.woff2);
+  font-weight: 400;
+}
+@font-face {
+  font-family: 'PT Root UI';
+  src: url(fonts/8bf08d3a5b04f523d0d4.woff),
+    url(fonts/f0497492db8214d4938e.woff2);
+  font-weight: 300;
+}
+
+
+/* articles.html */
+.A_HeaderArticlesLink {
+  color: #eee;
+  text-decoration: none;
+  font-size: 20rem;
+  transition: color 0.4s ease;
+}
+.A_HeaderArticlesLink:hover {
+  color: #bababa;
+  transition: color 0.8s ease;
+}
+.A_HeaderArticlesH1 {
+  font-size: 120rem;
+  margin-top: 100rem;
+  font-weight: 700;
+}
+.A_ArticlesCardImage {
+  width: 100rem;
+  display: block;
+}
+.A_ArticlesCardHeader {
+  font-size: 28rem;
+}
+.A_ArticleCardTag {
+  font-size: 16rem;
+  border-radius: 20rem;
+  border: 2rem solid #eee;
+  padding: 10rem 14rem;
+  width: fit-content;
+}
+/* ______________styleguide___________ */
+.A_HeaderLink {
+  text-decoration: none;
+  color: #aaa;
+  transition: all ease 0.4s;
+}
+.A_HeaderLink:hover {
+  color: #fff;
+  transition: all ease 0.6s;
+}
+/* .A_HeaderImage {
+  width: 200rem;
+} */
+.A_HeaderImage {
+  width: 400rem;
+  height: 300rem;
+  background-image: url(images/d2c1989ef173e667a6c8.jpg);
+  background-size: 400rem 3600rem;
+  background-position-y: 300rem;
+  transform-origin: center;
+  transform: scale(1);
+  animation: spriteCrystalAnim 1.5s steps(1) infinite alternate paused;
+  transition: transform 0.1s linear;
+}
+.A_HeaderImage:hover {
+  animation-play-state: running;
+  transform: scale(1.15);
+  transition: transform 0.5s linear;
+}
+.A_MainHeader {
+  font-weight: 700;
+  font-size: 120rem;
+  color: #d8d8d8;
+  display: block;
+}
+.A_SectionHeader {
+  font-weight: 500;
+  font-size: 58rem;
+  line-height: 64rem;
+  color: #090227;
+  margin-bottom: 30rem;
+}
+.A_SectionDopHeader {
+  font-weight: 500;
+  font-size: 38rem;
+  line-height: 54rem;
+  color: #090227;
+  margin-bottom: 20rem;
+}
+.A_MainSectionText,
+.A_HeaderLink {
+  font-weight: 400;
+  font-size: 28rem;
+  line-height: 36rem;
+  color: #090227;
+}
+.A_MainSectionText {
+  margin-bottom: 20rem;
+}
+.A_MainSectionLink {
+  width: 100%;
+  border-radius: 22rem;
+  background: #eee;
+  color: #090227;
+  padding: 10rem 20rem;
+  text-decoration: none;
+  transition: all ease 0.4s;
+  font-size: 28rem;
+}
+.A_MainSectionLink:hover {
+  background: #090227;
+  background: radial-gradient(circle, rgb(69, 46, 128) 0%, rgb(9, 2, 39) 100%);
+  color: #eee;
+  transition: all ease 0.8s;
+}
+
+/* ________________test___________ */
+.A_TestHeader {
+  font-size: 32rem;
+  color: var(--bg-card-color);
+  margin: 16rem 0;
+  font-weight: 600;
+}
+.A_TestImageQuestion {
+  height: 100%;
+}
+.A_TestQuestion {
+  margin: 100rem 0 60rem 0;
+}
+.A_TestQuestion,
+.A_ResultHeader {
+  font-size: 40rem;
+}
+.A_Checkbox,
+input[type='checkbox'] {
+  border-radius: 8rem;
+  width: 26rem;
+  height: 26rem;
+  position: relative;
+}
+input[type='checkbox'] {
+  opacity: 0;
+  border: 1.4rem solid transparent;
+  margin: 0;
+  z-index: 2;
+}
+input[type='checkbox']:checked + .A_Checkbox {
+  background-color: var(--button-basic-color);
+}
+.A_Checkbox {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border: 1.4rem solid var(--button-basic-color);
+  border-radius: 8rem;
+  width: 26rem;
+  height: 26rem;
+  background-color: white;
+}
+.A_FinalCount,
+.A_NumberOfQuestion {
+  color: #ffc5fc;
+}
+
+/* ______________styleguide___________ */
+.M_Header {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 40rem 40rem;
+  align-items: center;
+}
+
+/* ________________test___________ */
+.M_TestImageSection {
+  width: 30%;
+}
+.M_TestAnswerMessage {
+  display: flex;
+  align-items: center;
+  gap: 16rem;
+  position: relative;
+}
+
+/* articles.html */
+.C_ArticlesCardTags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10rem;
+}
+
+/* ______________styleguide___________ */
+.C_MainSectionLinks {
+  width: 16vw;
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  gap: 10rem;
+  background-color: #090227cc;
+  border-radius: 30rem;
+  padding: 10rem;
+}
+.C_MainSectionLinks a:active {
+  background-color: cornflowerblue;
+}
+
+/* ________________test___________ */
+.C_TestAnswerMessages {
+  display: flex;
+  flex-direction: column;
+  gap: 30rem;
+}
+
+/* articles.html */
+.W_ArticlesCard {
+  width: calc(25% - 15rem);
+  display: flex;
+  flex-direction: column;
+  gap: 14rem;
+  background-color: #847d92;
+  border-radius: 20rem;
+  padding-bottom: 20rem;
+  color: #eee;
+}
+.W_ArticlesCardImageWrapper {
+  background-color: #4c445c;
+  border-radius: 20rem;
+  padding: 20rem 20rem 0;
+  min-height: 212rem;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+.W_ArticlesCardContent {
+  padding: 0 20rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  gap: 20rem;
+}
+.W_ArticleSlide {
+  display: flex;
+  border-radius: 20rem;
+  height: 100%;
+  background-color: #847d92;
+  color: #eee;
+}
+.W_SlideImageWrapper {
+  background-color: #4c445c;
+  border-radius: 20rem;
+  padding: 20rem 60rem 0;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+.O_Swiper .W_ArticlesCardContent {
+  padding: 40rem;
+}
+
+/* ______________styleguide___________ */
+.W_HeaderLinks {
+  padding: 10rem 40rem;
+}
+.W_MainSection {
+  margin-top: 80rem;
+}
+.W_MainSectionBlock_row {
+  display: flex;
+  gap: 20rem;
+}
+.W_MainSectionBlock_column {
+  padding: 40rem 0 0 180rem;
+  display: flex;
+  flex-direction: column;
+  gap: 20rem;
+}
+
+/* ________________test___________ */
+.W_TestTextSection {
+  color: var(--text-main-color);
+  font-size: 24rem;
+}
+.W_ResultTest {
+  color: var(--text-main-color);
+  font-size: 24rem;
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 30rem;
+}
+
+/* ____________________articles.html____________________ */
+.O_HeaderArticles {
+  width: 100%;
+  background-color: #4c445c;
+  color: #eee;
+  padding: 30rem 40rem;
+  border-radius: 0 0 40rem 40rem;
+}
+.O_HeaderArticlesLinks,
+.O_Articles {
+  display: flex;
+  gap: 20rem;
+}
+.O_Articles {
+  padding: 30rem 40rem;
+  width: 80%;
+  margin: 0 auto;
+  flex-wrap: wrap;
+}
+.O_Swiper {
+  padding: 30rem 40rem;
+  width: 80%;
+  height: 600rem;
+  font-size: 20rem;
+  margin: 0 auto;
+}
+
+/* ______________styleguide___________ */
+.O_Header {
+  background-color: #010101;
+  border-radius: 0 0 40rem 40rem;
+  overflow: hidden;
+}
+.O_Sidebar,
+.O_Aside {
+  padding: 0 20rem;
+  width: 20%;
+  position: relative;
+}
+.O_MainSection {
+  width: 60%;
+  position: relative;
+}
+
+/* ________________test___________ */
+.O_Test {
+  width: 1280rem;
+  height: 600rem;
+  background-color: var(--bg-card-color);
+  border-radius: 40rem;
+  display: flex;
+  gap: 40rem;
+  padding: 20rem;
+  padding-bottom: 0;
+}
+
+/* articles.html, styleguide */
+
+.S_Articles,
+.S_Styleguide {
+  background-color: #eee;
+}
+.S_Main {
+  display: flex;
+  padding: 60rem 0;
+}
+
+/* ________________test___________ */
+.S_Test {
+  padding: 20rem 80rem;
+  width: 100%;
+}
+
+* {
+  box-sizing: border-box;
+}
+html {
+  font-size: calc(1vw / 14.4);
+  scroll-behavior: smooth;
+}
+body {
+  font-family: 'PT Root UI', Arial, Helvetica, sans-serif;
+  font-size: 16rem;
+}
+h3 {
+  font-weight: 400;
+}
+h4 {
+  font-weight: 300;
+}
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+.swiper-pagination-bullet-active {
+  background: #4c445c;
+}
+:root {
+  --bg-card-color: #090227cc;
+  --text-main-color: #eee;
+  --button-basic-color: #9a91bc;
+  --button-hover-color: #8075aa;
+}
+
