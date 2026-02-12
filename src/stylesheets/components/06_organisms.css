@@ -16,6 +16,11 @@
   width: 80%;
   margin: 0 auto;
   flex-wrap: wrap;
+  /* justify-content: space-between; */
+  gap: 1.1vw;
+}
+.O_Articles .O_IndexSectionCard {
+  width: 32%;
 }
 .O_Swiper {
   padding: 30rem 40rem;
