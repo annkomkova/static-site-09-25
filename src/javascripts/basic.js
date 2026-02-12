@@ -1,1 +1,1 @@
-import '../stylesheets/basic.css'
+import '../stylesheets/style.css'

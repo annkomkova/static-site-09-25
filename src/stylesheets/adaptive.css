@@ -1,5 +1,5 @@
 @media screen and (max-width: 1280px) {
-  #indexWrapper {
+  .O_IndexWrapper {
     justify-content: flex-end;
     gap: 100rem;
   }
@@ -8,35 +8,35 @@
   html {
     font-size: calc(1vw / 6);
   }
-  #index {
+  .S_IndexPage {
     overflow: auto;
   }
-  #indexWrapper {
+  .O_IndexWrapper {
     width: calc(100% - 40rem);
     margin: 20rem;
     height: fit-content;
     gap: 0;
   }
-  .indexContainer {
+  .W_IndexContainer {
     flex-direction: column;
   }
-  .indexContainer > div {
+  .W_IndexContainer > div {
     width: 100%;
   }
-  #index h1 {
+  .A_IndexH1 {
     font-size: 100rem;
     margin-top: 40rem;
   }
-  #index form input,
-  #index form button {
+  .A_IndexFormInput,
+  .A_IndexFormButton {
     width: 100%;
     margin: 10rem 0 0 0;
   }
-  .animCircle {
+  .A_AnimCircle {
     width: 240rem;
     height: 240rem;
   }
-  .indexAnimation {
+  .O_IndexAnimation {
     width: 100%;
     height: auto;
     top: 50%;

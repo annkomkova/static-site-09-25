@@ -1,3 +1,13 @@
+@import 'reset.css';
+@import 'fonts.css';
+@import 'basic.css';
 @import 'layout.css';
 @import 'adaptive.css';
-@import 'animation.css';
+
+@import 'components/01_quarks.css';
+@import 'components/02_atoms.css';
+@import 'components/03_molecules.css';
+@import 'components/04_collections.css';
+@import 'components/05_wrappers.css';
+@import 'components/06_organisms.css';
+@import 'components/07_superorganisms.css';
