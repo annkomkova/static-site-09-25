@@ -26,3 +26,37 @@
   flex-direction: column;
   gap: 30rem;
 }
+
+.C_Icons {
+  display: flex;
+  justify-content: flex-end;
+  padding: 10rem;
+  gap: 20rem;
+}
+.C_MainLinks {
+  display: flex;
+  padding: 10rem;
+  gap: 20rem;
+}
+.C_MainLinks a {
+  font-size: 20rem;
+  color: #efefef;
+  text-decoration: none;
+  transition: text-decoration 0.4s ease;
+}
+.C_MainLinks a:hover {
+  text-decoration: underline;
+  transition: text-decoration 0.8s ease;
+}
+.C_IndexSectionCards {
+  display: flex;
+  justify-content: center;
+  gap: 30rem;
+  padding: 40rem 0;
+  flex-wrap: wrap;
+}
+.C_IndexSectionCardTags {
+  margin: 20rem 0;
+  display: flex;
+  gap: 10rem;
+}

@@ -9,7 +9,8 @@ module.exports = {
     articles: './src/javascripts/articles.js',
     theory: './src/javascripts/theory.js',
     test1: './src/pages/tests/test1.js',
-    basic: './src/javascripts/basic.js'
+    basic: './src/javascripts/basic.js',
+    filterTags: './src/javascripts/filterTags.js'
   },
   output: {
     path: path.resolve('.', 'docs'),

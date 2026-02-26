@@ -14,3 +14,25 @@
   padding: 20rem 80rem;
   width: 100%;
 }
+/* стилия для заглушки */
+.S_IndexPage {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.S_IndexSection {
+  margin: 200rem 40rem;
+}
+.S_IndexSectionCard {
+  background-color: var(--bg-card-color);
+  border-radius: 40rem;
+  width: 1400rem;
+  margin: 0 auto;
+  padding: 40rem 0;
+}
+.S_Menu {
+  display: flex;
+  justify-content: space-between;
+  padding: 20rem 40rem;
+}

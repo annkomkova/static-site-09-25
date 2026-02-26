@@ -19,7 +19,7 @@ const htmlPages = [
     'basic'
   ]),
   createPage('./src/pages/tests.html', './pages/tests.html', [
-    'index',
+    'filterTags',
     'basic'
   ]),
   createPage(

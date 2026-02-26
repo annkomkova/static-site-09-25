@@ -58,3 +58,65 @@
   padding: 20rem;
   padding-bottom: 0;
 }
+
+.O_IndexWrapper {
+  overflow: hidden;
+  margin-top: 20rem;
+  width: 1400rem;
+  height: 96vh;
+  border-radius: 40rem;
+  background-color: var(--bg-card-color);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  backdrop-filter: blur(30rem);
+}
+.O_IndexAnimation {
+  position: absolute;
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  top: 2%;
+  left: 25%;
+  animation: rotate 10s linear infinite;
+}
+.O_IndexSectionCard {
+  width: 30%;
+  background-color: var(--bg-card-color);
+  border-radius: 40rem;
+  backdrop-filter: blur(30rem);
+  padding: 20rem 40rem;
+  color: var(--text-main-color);
+  background-size: 40% 200rem;
+  background-repeat: no-repeat;
+  background-position: right bottom;
+  text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  min-height: 220rem;
+  justify-content: space-between;
+}
+.O_IndexSectionCard:nth-of-type(1) {
+  background-image: url('../../images/flowers/flower-1.svg');
+}
+.O_IndexSectionCard:nth-of-type(2) {
+  background-image: url('../../images/flowers/flower-2.svg');
+}
+.O_IndexSectionCard:nth-of-type(3) {
+  background-image: url('../../images/flowers/flower-3.svg');
+}
+.O_IndexSectionCard:nth-of-type(4) {
+  background-image: url('../../images/flowers/flower-4.svg');
+}
+.O_IndexSectionCard:nth-of-type(5) {
+  background-image: url('../../images/flowers/flower-5.svg');
+}
+.O_IndexSectionCard:nth-of-type(6) {
+  background-image: url('../../images/flowers/flower-6.svg');
+}
+.O_IndexSectionHeader {
+  display: flex;
+  justify-content: center;
+  gap: 40rem;
+}
