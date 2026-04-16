@@ -60,3 +60,18 @@
   display: flex;
   gap: 10rem;
 }
+
+/* поиск */
+.C_Dropdown {
+  display: none;
+  flex-direction: column;
+  width: 300rem;
+  border: 2rem solid var(--button-basic-color);
+  position: absolute;
+  z-index: 1;
+  top: 22rem;
+  border-radius: 20rem;
+  padding-top: 40rem;
+  background-color: white;
+  overflow: hidden;
+}

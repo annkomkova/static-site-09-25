@@ -71,3 +71,22 @@
   gap: 20rem;
   padding: 60rem 40rem 20rem;
 }
+
+/* поиск */
+
+.M_SearchResult {
+  text-decoration: none;
+  color: var(--button-hover-color);
+  font-size: 1.6vw;
+  display: flex;
+  flex-direction: column;
+  gap: 6rem;
+  border-top: 2rem solid var(--button-basic-color);
+  padding: 10rem 20rem;
+}
+.M_SearchResult:nth-of-type(1) {
+  border-top: none;
+}
+.M_SearchResult:hover {
+  background-color: #eee;
+}

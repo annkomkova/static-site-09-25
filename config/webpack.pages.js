@@ -12,7 +12,8 @@ const htmlPages = [
   createPage('./src/index.html', './index.html', ['index', 'basic']),
   createPage('./src/pages/articles.html', './pages/articles.html', [
     'articles',
-    'basic'
+    'basic',
+    'searchVanilla'
   ]),
   createPage('./src/pages/dictionary.html', './pages/dictionary.html', [
     'index',
