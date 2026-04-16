@@ -38,7 +38,31 @@ const htmlPages = [
   createPage('./src/pages/tests/test1.html', './pages/tests/test1.html', [
     'test1',
     'basic'
-  ])
+  ]),
+  createPage('./src/pages/articles/aloe.html', './pages/articles/aloe.html', [
+    'searchVanilla',
+    'basic'
+  ]),
+  createPage(
+    './src/pages/articles/cactus.html',
+    './pages/articles/cactus.html',
+    ['searchVanilla', 'basic']
+  ),
+  createPage(
+    './src/pages/articles/monstera.html',
+    './pages/articles/monstera.html',
+    ['searchVanilla', 'basic']
+  ),
+  createPage(
+    './src/pages/articles/orchidea.html',
+    './pages/articles/orchidea.html',
+    ['searchVanilla', 'basic']
+  ),
+  createPage(
+    './src/pages/articles/sansevieria.html',
+    './pages/articles/sansevieria.html',
+    ['searchVanilla', 'basic']
+  )
 ]
 
 module.exports = htmlPages

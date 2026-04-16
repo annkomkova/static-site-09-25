@@ -317,3 +317,36 @@ input[type='checkbox']:checked + .A_Checkbox {
 .A_FilterTag.active {
   background-color: var(--bg-card-color);
 }
+
+/* поиск */
+.A_SearchInput {
+  border-radius: 20rem;
+  width: 300rem;
+  /* height: 40rem; */
+  border: 2rem solid var(--button-basic-color);
+  padding: 10rem 20rem;
+  position: relative;
+  z-index: 2;
+  font-size: 20rem;
+  color: var(--button-hover-color);
+}
+.A_SearchInput:focus {
+  outline-color: var(--button-hover-color);
+  border-color: var(--button-hover-color);
+}
+.A_SearchButton {
+  padding: 10rem 20rem;
+  font-size: 20rem;
+  background-color: white;
+  border-radius: 20rem;
+  border: 2rem solid var(--button-basic-color);
+  color: var(--button-hover-color);
+  user-select: none;
+  cursor: pointer;
+}
+.A_SearchButton[disabled] {
+  /* background-color: #eee;
+  border-color: #777;
+  color: #777; */
+  filter: grayscale(1);
+}
