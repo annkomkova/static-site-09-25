@@ -95,15 +95,27 @@ function renderDropdown(results, dropdown, value) {
 
     const header = document.createElement('h5')
     header.classList.add('A_SearchResultHeader')
-    header.innerText = result.title
+    header.innerHTML = hightlight(result.title, value)
 
     const description = document.createElement('p')
     description.classList.add('A_SearchResultDescription')
-    description.innerText = result.description
+    description.innerHTML = hightlight(result.description, value)
 
     item.appendChild(header)
     item.appendChild(description)
 
     dropdown.appendChild(item)
   })
+}
+
+function hightlight(text, value) {
+  const regex = new RegExp(`${value}`, 'gi')
+
+  const formatted = text.replace(
+    regex,
+    `<span class="Q_Hightlight">${value}</span>`
+  )
+  console.log(formatted)
+
+  return formatted
 }
