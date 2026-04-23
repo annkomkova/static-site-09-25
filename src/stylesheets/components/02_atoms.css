@@ -334,13 +334,21 @@ input[type='checkbox']:checked + .A_Checkbox {
   outline-color: var(--button-hover-color);
   border-color: var(--button-hover-color);
 }
+.O_Search .A_SearchInput {
+  width: 100%;
+  padding: 16rem 28rem;
+}
+.O_Search .A_SearchButton {
+  padding: 16rem 28rem;
+}
 .A_SearchButton {
   padding: 10rem 20rem;
   font-size: 20rem;
-  background-color: white;
+  background-color: var(--button-basic-color);
   border-radius: 20rem;
   border: 2rem solid var(--button-basic-color);
-  color: var(--button-hover-color);
+  color: var(--text-main-color);
+
   user-select: none;
   cursor: pointer;
 }
@@ -349,4 +357,7 @@ input[type='checkbox']:checked + .A_Checkbox {
   border-color: #777;
   color: #777; */
   filter: grayscale(1);
+}
+.A_SearchResultHeader {
+  font-weight: 500;
 }

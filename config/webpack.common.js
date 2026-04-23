@@ -11,7 +11,8 @@ module.exports = {
     test1: './src/pages/tests/test1.js',
     basic: './src/javascripts/basic.js',
     filterTags: './src/javascripts/filterTags.js',
-    searchVanilla: './src/javascripts/searchVanilla.js'
+    searchVanilla: './src/javascripts/searchVanilla.js',
+    searchModule: './src/javascripts/searchModule.js'
   },
   output: {
     path: path.resolve('.', 'docs'),
