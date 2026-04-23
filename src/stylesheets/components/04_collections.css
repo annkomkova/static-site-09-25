@@ -48,7 +48,8 @@
   text-decoration: underline;
   transition: text-decoration 0.8s ease;
 }
-.C_IndexSectionCards {
+.C_IndexSectionCards,
+.C_SearchResults {
   display: flex;
   justify-content: center;
   gap: 30rem;

@@ -98,3 +98,10 @@
   display: flex;
   flex-direction: column;
 }
+.W_SearchContainer {
+  display: flex;
+  gap: 20rem;
+}
+.O_Search .W_SearchContainer {
+  width: 100%;
+}

@@ -15,6 +15,7 @@ const htmlPages = [
     'basic',
     'searchVanilla'
   ]),
+  createPage('./src/search.html', './search.html', ['searchModule', 'basic']),
   createPage('./src/pages/dictionary.html', './pages/dictionary.html', [
     'index',
     'basic'

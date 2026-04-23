@@ -334,6 +334,13 @@ input[type='checkbox']:checked + .A_Checkbox {
   outline-color: var(--button-hover-color);
   border-color: var(--button-hover-color);
 }
+.O_Search .A_SearchInput {
+  width: 100%;
+  padding: 16rem 28rem;
+}
+.O_Search .A_SearchButton {
+  padding: 16rem 28rem;
+}
 .A_SearchButton {
   padding: 10rem 20rem;
   font-size: 20rem;

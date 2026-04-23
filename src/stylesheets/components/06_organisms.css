@@ -82,7 +82,7 @@
   animation: rotate 10s linear infinite;
 }
 .O_IndexSectionCard {
-  width: 30%;
+  width: 300rem;
   background-color: var(--bg-card-color);
   border-radius: 40rem;
   backdrop-filter: blur(30rem);
@@ -119,4 +119,13 @@
   display: flex;
   justify-content: center;
   gap: 40rem;
+}
+.O_Search {
+  width: 70%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 100rem;
+  padding: 60rem 0;
 }

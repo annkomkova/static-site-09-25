@@ -1,36 +1,8 @@
-initSearch()
-console.log('test')
+import { articles } from './searchData.js'
 
-function initSearch() {
-  const articles = [
-    {
-      title: 'Монстера',
-      description: 'Тропическое растение с крупными листьями',
-      url: 'https://annkomkova.github.io/static-site-09-25/pages/articles/monstera.html'
-    },
-    {
-      title: 'Кактус',
-      description: 'Пустынное растение без частого полива',
-      url: 'https://annkomkova.github.io/static-site-09-25/pages/articles/cactus.html'
-    },
-    {
-      title: 'Сансевиерия',
-      description: 'Теневыносливый суккулент, не требующий частого полива',
-      url: 'https://annkomkova.github.io/static-site-09-25/pages/articles/sansevieria.html'
-    },
-    {
-      title: 'Орихидея',
-      description: 'Красивое цветущее растение, растущее во мху',
-      url: 'https://annkomkova.github.io/static-site-09-25/pages/articles/orchidea.html'
-    },
-    {
-      title: 'Алоэ',
-      description:
-        'Суккулент, не требующий частого полива, с лекарственными свойствами',
-      url: 'https://annkomkova.github.io/static-site-09-25/pages/articles/aloe.html'
-    }
-  ]
+initSearch(articles)
 
+function initSearch(articles) {
   const input = document.querySelector('.A_SearchInput')
   const button = document.querySelector('.A_SearchButton')
 
@@ -52,8 +24,20 @@ function hadleSearchClick(articles, input, button) {
       article.description.toLowerCase().includes(value)
   )
 
+  console.log(window.location)
+
+  //!!!! для теста на локалхосте
+  // window.location.href =
+  //   'http://localhost:8080/' + `search.html?q=${encodeURIComponent(value)}`
+
+  //для работы на github.pages
+  window.location.href =
+    'https://annkomkova.github.io/static-site-09-25/' +
+    `search.html?q=${encodeURIComponent(value)}`
+
   if (result) {
-    window.location.href = result.url
+    // window.location.href = result.url
+    // window.location.href = `search.html?q=${encodeURIComponent(value)}`
   }
 }
 
@@ -115,7 +99,6 @@ function hightlight(text, value) {
     regex,
     `<span class="Q_Hightlight">${value}</span>`
   )
-  console.log(formatted)
 
   return formatted
 }
