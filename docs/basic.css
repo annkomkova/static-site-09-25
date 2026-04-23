@@ -253,6 +253,9 @@ h4 {
   left: 14rem;
   transition: all 0.6s ease;
 }
+.Q_Hightlight {
+  background-color: #ddba00;
+}
 
 /* articles.html */
 .A_HeaderArticlesLink {
@@ -590,13 +593,21 @@ input[type='checkbox']:checked + .A_Checkbox {
   outline-color: var(--button-hover-color);
   border-color: var(--button-hover-color);
 }
+.O_Search .A_SearchInput {
+  width: 100%;
+  padding: 16rem 28rem;
+}
+.O_Search .A_SearchButton {
+  padding: 16rem 28rem;
+}
 .A_SearchButton {
   padding: 10rem 20rem;
   font-size: 20rem;
-  background-color: white;
+  background-color: var(--button-basic-color);
   border-radius: 20rem;
   border: 2rem solid var(--button-basic-color);
-  color: var(--button-hover-color);
+  color: var(--text-main-color);
+
   user-select: none;
   cursor: pointer;
 }
@@ -605,6 +616,9 @@ input[type='checkbox']:checked + .A_Checkbox {
   border-color: #777;
   color: #777; */
   filter: grayscale(1);
+}
+.A_SearchResultHeader {
+  font-weight: 500;
 }
 
 /* ______________styleguide___________ */
@@ -681,6 +695,25 @@ input[type='checkbox']:checked + .A_Checkbox {
   padding: 60rem 40rem 20rem;
 }
 
+/* поиск */
+
+.M_SearchResult {
+  text-decoration: none;
+  color: var(--button-hover-color);
+  font-size: 1.6vw;
+  display: flex;
+  flex-direction: column;
+  gap: 6rem;
+  border-top: 2rem solid var(--button-basic-color);
+  padding: 10rem 20rem;
+}
+.M_SearchResult:nth-of-type(1) {
+  border-top: none;
+}
+.M_SearchResult:hover {
+  background-color: #eee;
+}
+
 /* articles.html */
 .C_ArticlesCardTags {
   display: flex;
@@ -731,7 +764,8 @@ input[type='checkbox']:checked + .A_Checkbox {
   text-decoration: underline;
   transition: text-decoration 0.8s ease;
 }
-.C_IndexSectionCards {
+.C_IndexSectionCards,
+.C_SearchResults {
   display: flex;
   justify-content: center;
   gap: 30rem;
@@ -742,6 +776,21 @@ input[type='checkbox']:checked + .A_Checkbox {
   margin: 20rem 0;
   display: flex;
   gap: 10rem;
+}
+
+/* поиск */
+.C_Dropdown {
+  display: none;
+  flex-direction: column;
+  width: 300rem;
+  border: 2rem solid var(--button-basic-color);
+  position: absolute;
+  z-index: 1;
+  top: 22rem;
+  border-radius: 20rem;
+  padding-top: 40rem;
+  background-color: white;
+  overflow: hidden;
 }
 
 /* articles.html */
@@ -844,6 +893,13 @@ input[type='checkbox']:checked + .A_Checkbox {
   display: flex;
   flex-direction: column;
 }
+.W_SearchContainer {
+  display: flex;
+  gap: 20rem;
+}
+.O_Search .W_SearchContainer {
+  width: 100%;
+}
 
 /* ____________________articles.html____________________ */
 .O_HeaderArticles {
@@ -929,7 +985,7 @@ input[type='checkbox']:checked + .A_Checkbox {
   animation: rotate 10s linear infinite;
 }
 .O_IndexSectionCard {
-  width: 30%;
+  width: 300rem;
   background-color: var(--bg-card-color);
   border-radius: 40rem;
   backdrop-filter: blur(30rem);
@@ -966,6 +1022,15 @@ input[type='checkbox']:checked + .A_Checkbox {
   display: flex;
   justify-content: center;
   gap: 40rem;
+}
+.O_Search {
+  width: 70%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 100rem;
+  padding: 60rem 0;
 }
 
 /* articles.html, styleguide */
