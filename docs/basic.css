@@ -1069,6 +1069,7 @@ input[type='checkbox']:checked + .A_Checkbox {
 .S_Menu {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   padding: 20rem 40rem;
 }
 
