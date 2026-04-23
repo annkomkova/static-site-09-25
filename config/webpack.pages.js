@@ -9,7 +9,11 @@ function createPage(template, filename, chunks) {
 }
 
 const htmlPages = [
-  createPage('./src/index.html', './index.html', ['index', 'basic']),
+  createPage('./src/index.html', './index.html', [
+    'index',
+    'basic',
+    'searchVanilla'
+  ]),
   createPage('./src/pages/articles.html', './pages/articles.html', [
     'articles',
     'basic',
@@ -18,11 +22,13 @@ const htmlPages = [
   createPage('./src/search.html', './search.html', ['searchModule', 'basic']),
   createPage('./src/pages/dictionary.html', './pages/dictionary.html', [
     'index',
-    'basic'
+    'basic',
+    'searchVanilla'
   ]),
   createPage('./src/pages/tests.html', './pages/tests.html', [
     'filterTags',
-    'basic'
+    'basic',
+    'searchVanilla'
   ]),
   createPage(
     './src/pages/articles/article1.html',
@@ -39,31 +45,33 @@ const htmlPages = [
   ]),
   createPage('./src/pages/tests/test1.html', './pages/tests/test1.html', [
     'test1',
-    'basic'
+    'basic',
+    'searchVanilla'
   ]),
   createPage('./src/pages/articles/aloe.html', './pages/articles/aloe.html', [
     'searchVanilla',
-    'basic'
+    'basic',
+    'searchVanilla'
   ]),
   createPage(
     './src/pages/articles/cactus.html',
     './pages/articles/cactus.html',
-    ['searchVanilla', 'basic']
+    ['searchVanilla', 'basic', 'searchVanilla']
   ),
   createPage(
     './src/pages/articles/monstera.html',
     './pages/articles/monstera.html',
-    ['searchVanilla', 'basic']
+    ['searchVanilla', 'basic', 'searchVanilla']
   ),
   createPage(
     './src/pages/articles/orchidea.html',
     './pages/articles/orchidea.html',
-    ['searchVanilla', 'basic']
+    ['searchVanilla', 'basic', 'searchVanilla']
   ),
   createPage(
     './src/pages/articles/sansevieria.html',
     './pages/articles/sansevieria.html',
-    ['searchVanilla', 'basic']
+    ['searchVanilla', 'basic', 'searchVanilla']
   )
 ]
 
