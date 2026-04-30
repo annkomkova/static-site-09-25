@@ -72,7 +72,11 @@ const htmlPages = [
     './src/pages/articles/sansevieria.html',
     './pages/articles/sansevieria.html',
     ['searchVanilla', 'basic', 'searchVanilla']
-  )
+  ),
+  createPage('./src/pages/reactBasics.html', './pages/reactBasics.html', [
+    'basic',
+    'reactBasics'
+  ])
 ]
 
 module.exports = htmlPages

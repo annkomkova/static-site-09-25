@@ -12,7 +12,8 @@ module.exports = {
     basic: './src/javascripts/basic.js',
     filterTags: './src/javascripts/filterTags.js',
     searchVanilla: './src/javascripts/searchVanilla.js',
-    searchModule: './src/javascripts/searchModule.js'
+    searchModule: './src/javascripts/searchModule.js',
+    reactBasics: './src/javascripts/reactBasics.jsx'
   },
   output: {
     path: path.resolve('.', 'docs'),
