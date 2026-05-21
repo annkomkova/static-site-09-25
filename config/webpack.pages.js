@@ -14,18 +14,18 @@ const htmlPages = [
     'basic',
     'searchVanilla'
   ]),
-  createPage('./src/pages/articles.html', './pages/articles.html', [
+  createPage('./src/pages/articles.ejs', './pages/articles.html', [
     'articles',
     'basic',
     'searchVanilla'
   ]),
   createPage('./src/search.html', './search.html', ['searchModule', 'basic']),
-  createPage('./src/pages/dictionary.html', './pages/dictionary.html', [
+  createPage('./src/pages/dictionary.ejs', './pages/dictionary.html', [
     'index',
     'basic',
     'searchVanilla'
   ]),
-  createPage('./src/pages/tests.html', './pages/tests.html', [
+  createPage('./src/pages/tests.ejs', './pages/tests.html', [
     'filterTags',
     'basic',
     'searchVanilla'
