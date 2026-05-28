@@ -99,15 +99,15 @@ module.exports = {
       location: 'analytics',
       template_filename: '*',
       priority: 'replace'
-    }),
-
-    new CopyWebpackPlugin({
-      patterns: [
-        {
-          from: path.resolve(__dirname, '../src/share/CNAME'),
-          to: path.resolve(__dirname, '../docs')
-        }
-      ]
     })
+
+    // new CopyWebpackPlugin({
+    //   patterns: [
+    //     {
+    //       from: path.resolve(__dirname, '../src/share/CNAME'),
+    //       to: path.resolve(__dirname, '../docs')
+    //     }
+    //   ]
+    // })
   ]
 }
