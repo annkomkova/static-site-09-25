@@ -90,3 +90,8 @@
 .M_SearchResult:hover {
   background-color: #eee;
 }
+.M_Footer {
+  display: flex;
+  flex-direction: column;
+  gap: 1.6vw;
+}
