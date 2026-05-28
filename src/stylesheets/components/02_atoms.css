@@ -361,3 +361,13 @@ input[type='checkbox']:checked + .A_Checkbox {
 .A_SearchResultHeader {
   font-weight: 500;
 }
+a.A_Footer:hover {
+  text-decoration: underline;
+}
+a.A_Footer {
+  color: white;
+  text-decoration: none;
+}
+.A_Footer {
+  font-size: 1.6vw;
+}
