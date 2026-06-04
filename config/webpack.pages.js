@@ -17,7 +17,7 @@ const htmlPages = [
   createPage('./src/pages/articles.ejs', './pages/articles.html', [
     'articles',
     'basic',
-    'searchVanilla'
+    'searchReact'
   ]),
   createPage('./src/search.html', './search.html', ['searchModule', 'basic']),
   createPage('./src/pages/dictionary.ejs', './pages/dictionary.html', [
